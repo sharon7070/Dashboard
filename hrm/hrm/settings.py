@@ -81,28 +81,28 @@ WSGI_APPLICATION = 'hrm.wsgi.application'
 
 
 # Old
-# DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.mysql',
-#             'NAME': 'hrm',
-#             'USER': 'root',
-#             'PASSWORD': '1234',
-#             'HOST': 'localhost',  # Or your MySQL server address
-#             'PORT': '3306',
-#         }
-#     }
+DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'hrm',
+            'USER': 'root',
+            'PASSWORD': '1234',
+            'HOST': 'localhost',  # Or your MySQL server address
+            'PORT': '3306',
+        }
+    }
 
 #  New
-DATABASES = {
-    'default': {
-        'ENGINE': 'mysql.connector.django',
-        'NAME': 'hrm',
-        'USER': 'root',
-        'PASSWORD': '1234', 
-        'HOST': 'localhost', 
-        'PORT': '3306',
-    } 
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'mysql.connector.django',
+#         'NAME': 'hrm',
+#         'USER': 'root',
+#         'PASSWORD': '1234', 
+#         'HOST': 'localhost', 
+#         'PORT': '3306',
+#     } 
+# }
 
 
 
