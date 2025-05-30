@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}HRM-DASHBOARD{% endblock %}
+{% block content %}
+
+
+
+
+  <body>
+  
+<h2 class="intro-y mt-10 text-lg font-medium">Security Settings & Notification Settings</h2>
+
+<!-- BEGIN: content start here ------------------------------------------------------------------------------------------------------->
+<div class="px-8 pt-6 pb-8">
+       
+
+    <!-- --------------------------------Security Settings-------------------------------------------- -->
+   
+  
+    <!-- --------------------------------Notification Settings-------------------------------------------- -->
+    <section class="settingspart" id="notifications">
+      <h3>Notification Settings</h3>
+      <div class="form-group">
+        <label for="email-notifications">Email Notifications</label>
+        <select id="email-notifications">
+          <option>On</option>
+          <option>Off</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="sms-alerts">SMS Alerts</label>
+        <select id="sms-alerts">
+          <option>On</option>
+          <option>Off</option>
+        </select>
+      </div>
+      <button class="savebtn">Save Notification Preferences</button>
+    </section>
+  </div>
+  </div>
+
+  {% endblock %}
+  
+
+
+           
+
+
+             
+
+
+           
+         
+
+
+             
+       
+
+
+             
+         
+         
+       
+<!-- Content end here ------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+

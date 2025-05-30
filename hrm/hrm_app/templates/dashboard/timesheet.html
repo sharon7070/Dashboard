@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}HRM-DASHBOARD{% endblock %}
+{% block content %}
+  
+<body>
+    
+<h2 class="intro-y mt-10 text-lg font-medium">Employee Time Sheet</h2>
+
+<!-- BEGIN: content start here ------------------------------------------------------------------------------------------------------->
+
+<div class="timesheet-container">
+    <h3>Employee Time Sheet - April 2025</h3>
+  
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Employee Name</th>
+          <th>Clock In</th>
+          <th>Clock Out</th>
+          <th>Break (hrs)</th>
+          <th>Total Hours</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2025-04-24</td>
+          <td>Theertha Biju</td>
+          <td>09:00 AM</td>
+          <td>06:00 PM</td>
+          <td>1.0</td>
+          <td>9.00</td>
+          <td class="status-present">Present</td>
+        </tr>
+        <tr>
+          <td>2025-04-24</td>
+          <td>Jaseem</td>
+          <td>10:15 AM</td>
+          <td>06:00 PM</td>
+          <td>0.75</td>
+          <td>7.0</td>
+          <td class="status-late">Late Entry</td>
+        </tr>
+        <tr>
+          <td>2025-04-24</td>
+          <td>Basil</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>0</td>
+          <td class="status-absent">Absent</td>
+        </tr>
+        <tr>
+            <td>2025-04-24</td>
+            <td>Sharon</td>
+            <td>9:00 AM</td>
+          <td>06:00 PM</td>
+          <td>0.75</td>
+          <td>9.0</td>
+          <td class="status-present">Present</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+     
+
+
+           
+
+
+             
+
+
+           
+         
+
+
+             
+       
+
+
+             
+         
+         
+       
+ <!-- Content end here -------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+      </div>
+</div>
+
+    
+</body>
+{% endblock %}

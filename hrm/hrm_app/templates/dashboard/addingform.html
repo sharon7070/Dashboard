@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}HRM-DASHBOARD{% endblock %}
+{% block content %}
+  <body>
+
+<!-- Content here ------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<div class="addingform ">
+  <div class="form-container ">
+    <h2>Add New Employee</h2>
+    <form id="employeeForm" novalidate>
+      <div class="form-group">
+        <label for="Employeeid">Employee id</label>
+        <input type="number" id="Employeeid" name="Employeeid" />
+        <div class="error" id="EmployeeidError"></div>
+      </div>
+
+      <div class="form-group">
+          <label for="fullName">Employee Name</label>
+          <input type="text" id="fullName" name="fullName" />
+
+          
+          <div class="error" id="fullNameError"></div>
+        </div>
+        <div class="form-group">
+          <label for="Dateofbirth">Date of Birth</label>
+          <input type="date" id="Dateofbirth" name="Dateofbirth" />
+          <div class="error" id="DateofbirthError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="joiningDate">Joining Date</label>
+          <input type="date" id="joiningDate" name="joiningDate" />
+          <div class="error" id="joiningDateError"></div>
+        </div>
+        <div class="form-group">
+          <label for="designation">Designation</label>
+          <input type="text" id="designation" name="designation" />
+          <div class="error" id="designationError"></div>
+        </div>
+        <div class="form-group">
+          <label for="department">Department</label>
+          <select id="department" name="department">
+            <option value="">Select</option>
+            <option value="hr">HR</option>
+            <option value="dev">Development</option>
+            <option value="design">Designing</option>
+            <option value="prod">Production</option>
+            <option value="marketing">Marketing</option>
+          </select>
+          <div class="error" id="departmentError"></div>
+        </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" />
+        <div class="error" id="emailError"></div>
+      </div>
+      <div class="form-group">
+          <label for="status">Employment Status</label>
+          <select id="status" name="status">
+            <option value="">Select</option>
+            <option value="active">Active</option>
+            <option value="on-leave">On Leave</option>
+            <option value="resigned">Resigned</option>
+          </select>
+          <div class="error" id="statusError"></div>
+        </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" />
+        <div class="error" id="phoneError"></div>
+      </div>
+      <div class="form-group">
+          <label for="salery">salery</label>
+          <input type="text" id="salery" name="salery" />
+          <div class="error" id="saleryError"></div>
+        </div>
+      <div class="form-actions">
+        <button type="submit">Add Employee</button>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- Content end here ------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+      </div>
+    </div>
+
+  </body>
+
+  {% endblock %}
